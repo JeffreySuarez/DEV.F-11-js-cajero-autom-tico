@@ -13,6 +13,9 @@ let data = [
   },
 ];
 
+const errorPassword = document.getElementById("errorPas");
+const errorUsuario = document.getElementById("errorUser");
+
 function login(form) {
   let nombres = data.map((e) => e.name);
   console.log(nombres);
@@ -30,9 +33,11 @@ function login(form) {
     if (form.password.value === filtrarPassword) {
       location = "home.html";
     } else {
+      errorPassword.innerHTML = "Error al ingresar el password";
       console.log("error de password");
     }
   } else {
+    errorUsuario.innerHTML = "Error al ingresar el Usuario";
     console.log("error de usuario");
   }
 }

@@ -4,35 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="titulo">
-        <h1>Cajero Automático</h1>
-    </div>
+    <header>
 
-    <div class="login">
-        <form action="" id="formularioLogin">
-            <div class="tituloLogin">
-                <h2>Login</h2>
-            </div>
-            <div class="usuario" id="contentUsuario">
-                <label for="usuario">Usuario</label>
-                <input type="text" name="usuario" id="usuario">
-            </div>
-            <div class="password">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div class="bottonLogin">
-                <input type="button" value="Login" onclick="login(this.form)">
-            </div>
+        <div class="titulo">
+            <h1>Cajero Automático</h1>
+        </div>
+    </header>
 
 
-        </form>
-    </div>
+    <main class="contenidoMain">
+
+
+        <div class="login">
+            <form action="" id="formularioLogin">
+                <div class="tituloLogin">
+                    <h2>Login</h2>
+                </div>
+                <div class="usuario" id="contentUsuario">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario">
+                </div>
+                <div class="error" id="errorUser"></div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="error" id="errorPas"></div>
+                <div class="bottonLogin">
+                    <input type="button" value="Login" onclick="login(this.form)">
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
 
     <script src="./app.js"></script>
 </body>
