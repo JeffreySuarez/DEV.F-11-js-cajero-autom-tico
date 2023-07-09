@@ -1,0 +1,41 @@
+:root {
+  --colorOne: #daf7a6;
+  --colorTwo: #ffc300;
+  --colorTree: #ff5733;
+  --colorFour: #c70039;
+  --colorFive: #900c3f;
+  --colorSix: #581845;
+}
+
+/* estilos index.html */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo {
+  width: 100%;
+  font-size: 2rem;
+  color: #daf7a6;
+  background-color: #581845;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+}
+
+.content-main {
+  width: 100%;
+  height: 100%;
+  background-color: #ff5733;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
